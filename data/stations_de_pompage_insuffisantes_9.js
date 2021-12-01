@@ -1,13 +1,1 @@
-var json_stations_de_pompage_insuffisantes_9 = {
-"type": "FeatureCollection",
-"name": "stations_de_pompage_insuffisantes_9",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "nom": "SR6", "ID": "1" }, "geometry": { "type": "Point", "coordinates": [ 10.10296285964973, 33.87381255782014 ] } },
-{ "type": "Feature", "properties": { "nom": "SP3", "ID": "2" }, "geometry": { "type": "Point", "coordinates": [ 10.12509188707927, 33.85463766762604 ] } },
-{ "type": "Feature", "properties": { "nom": "SR9", "ID": "3" }, "geometry": { "type": "Point", "coordinates": [ 10.11858497316602, 33.87787433344757 ] } },
-{ "type": "Feature", "properties": { "nom": "SR4", "ID": "4" }, "geometry": { "type": "Point", "coordinates": [ 10.11112628097482, 33.89302967056433 ] } },
-{ "type": "Feature", "properties": { "nom": "SP1", "ID": "5" }, "geometry": { "type": "Point", "coordinates": [ 10.10057700284952, 33.9093305458126 ] } },
-{ "type": "Feature", "properties": { "nom": "SP2", "ID": "6" }, "geometry": { "type": "Point", "coordinates": [ 10.09767600632864, 33.91099559887942 ] } }
-]
-}
+var json_stations_de_pompage_insuffisantes_9 = {"type":"FeatureCollection","name":"stations_de_pompage_insuffisantes_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"OBJECTID":1.0,"nom":"SR6"},"geometry":{"type":"Point","coordinates":[10.102962859649727,33.873812557820138]}},{"type":"Feature","properties":{"OBJECTID":2.0,"nom":"SP3"},"geometry":{"type":"Point","coordinates":[10.125091887079266,33.854637667626044]}},{"type":"Feature","properties":{"OBJECTID":3.0,"nom":null},"geometry":{"type":"Point","coordinates":[10.118584973166024,33.877874333447572]}},{"type":"Feature","properties":{"OBJECTID":5.0,"nom":"SR4"},"geometry":{"type":"Point","coordinates":[10.111126280974815,33.893029670564331]}},{"type":"Feature","properties":{"OBJECTID":6.0,"nom":"SP1"},"geometry":{"type":"Point","coordinates":[10.100577002849516,33.909330545812601]}},{"type":"Feature","properties":{"OBJECTID":7.0,"nom":"SP2"},"geometry":{"type":"Point","coordinates":[10.097676006328641,33.910995598879417]}}]}
