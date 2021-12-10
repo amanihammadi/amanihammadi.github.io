@@ -320,7 +320,8 @@
                         <td>' + (feature.properties['localité'] !== null ? autolinker.link(feature.properties['localité'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['collecteur'] !== null ? autolinker.link(feature.properties['collecteur'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">collecteur</th>\
+                        <td>' + (feature.properties['collecteur'] !== null ? autolinker.link(feature.properties['collecteur'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">noeud_amon</th>\
@@ -530,7 +531,8 @@
                         <td>' + (feature.properties['date_de_mi'] !== null ? autolinker.link(feature.properties['date_de_mi'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['code_UR'] !== null ? autolinker.link(feature.properties['code_UR'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">code_UR</th>\
+                        <td>' + (feature.properties['code_UR'] !== null ? autolinker.link(feature.properties['code_UR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">situation</th>\
