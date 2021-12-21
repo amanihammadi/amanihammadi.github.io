@@ -60,7 +60,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[33.85624066748082,10.064196191052224],[33.89635268379358,10.160878137296388]]);
+        }).fitBounds([[33.86654204511774,10.089304987334348],[33.88659842369243,10.137646315637452]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -181,7 +181,7 @@
                 dashArray: '',
                 lineCap: 'round',
                 lineJoin: 'round',
-                weight: 15.0,
+                weight: 11.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -282,7 +282,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 8.0,
+                weight: 6.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -391,7 +391,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 8.0,
+                weight: 6.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -570,7 +570,7 @@
             return {
                 pane: 'pane_stationsdepompage_7',
                 shape: 'triangle',
-                radius: 12.0,
+                radius: 8.0,
                 opacity: 1,
                 color: 'rgba(61,128,53,1.0)',
                 dashArray: '',
@@ -682,7 +682,7 @@
         function style_noeuds_9_0() {
             return {
                 pane: 'pane_noeuds_9',
-                radius: 3.9999999999999996,
+                radius: 3.1999999999999997,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -726,7 +726,7 @@
             };
             title.addTo(map);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/noeuds_9.png" /> noeuds': layer_noeuds_9,'<img src="legend/stationsdepompageinsuffisantes_8.png" /> stations de pompage insuffisantes': layer_stationsdepompageinsuffisantes_8,'<img src="legend/stationsdepompage_7.png" /> stations de pompage': layer_stationsdepompage_7,'<img src="legend/regards_6.png" /> regards': layer_regards_6,'<img src="legend/collecteur_5.png" /> collecteur': layer_collecteur_5,'<img src="legend/rseauderfoulement_4.png" /> réseau de réfoulement': layer_rseauderfoulement_4,'<img src="legend/rseaugravitaire_3.png" /> réseau gravitaire': layer_rseaugravitaire_3,'<img src="legend/trononensurcharge_2.png" /> tronçon en surcharge': layer_trononensurcharge_2,'<img src="legend/STEP_1.png" /> STEP': layer_STEP_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/noeuds_9.png" /> noeuds': layer_noeuds_9,'<img src="legend/stationsdepompageinsuffisantes_8.png" /> stations de pompage insuffisantes': layer_stationsdepompageinsuffisantes_8,'<img src="legend/stationsdepompage_7.png" /> stations de pompage': layer_stationsdepompage_7,'<img src="legend/regards_6.png" /> regards': layer_regards_6,'<img src="legend/collecteur_5.png" /> collecteur': layer_collecteur_5,'<img src="legend/rseauderfoulement_4.png" /> réseau de réfoulement': layer_rseauderfoulement_4,'<img src="legend/rseaugravitaire_3.png" /> réseau gravitaire': layer_rseaugravitaire_3,'<img src="legend/trononensurcharge_2.png" /> tronçon en surcharge': layer_trononensurcharge_2,'<img src="legend/STEP_1.png" /> STEP': layer_STEP_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_STEP_1.eachLayer(function(layer) {
@@ -760,7 +760,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['station'] !== null?String('<div style="color: #000000; font-size: 12pt; font-weight: bold; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['station']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_stationsdepompage_7'});
+            layer.bindTooltip((layer.feature.properties['station'] !== null?String('<div style="color: #000000; font-size: 9pt; font-weight: bold; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['station']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_stationsdepompage_7'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -773,7 +773,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['noeud'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['noeud']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_noeuds_9'});
+            layer.bindTooltip((layer.feature.properties['noeud'] !== null?String('<div style="color: #000000; font-size: 8pt; font-weight: bold; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['noeud']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_noeuds_9'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
